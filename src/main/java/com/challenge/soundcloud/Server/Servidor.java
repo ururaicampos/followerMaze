@@ -3,7 +3,6 @@ package com.challenge.soundcloud.Server;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
 public class Servidor extends ServerAbstract {
@@ -22,7 +21,7 @@ public class Servidor extends ServerAbstract {
 
     @Override
     public void run() {
-        Socket socket;
+        Socket socket; // Socket -> Endpoint for communication between two machines.
         try {
             socket = serverSocket.accept(); // accept() -> Listen for a connection to this socket and accepts it.
 
