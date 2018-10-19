@@ -46,7 +46,7 @@ public class FollowerMaze {
         eventServer.setSoTimeout(SERVER_TIMEOUT);
 
         // Executors.newChachedThreadPool() -> Creates a Thread pool as needed and use previously constructed threads when available
-        final Server client = new Server(clientServer, Executors.newCachedThreadPool(), )
+        // final Server client = new Server(clientServer, Executors.newCachedThreadPool(), )
 
     }
 }
